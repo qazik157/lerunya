@@ -1,0 +1,800 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color #ff8da1; /* Нежно-розовый градиент */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360%;
+    height: 360%;
+    background-image: url("background-title.png"); /* Путь к файлу */
+    background-repeat: repeat; /* Повтор изображения */
+    background-size: 100px 100px; /* Размер картинки */
+    opacity: 0.5; /* Полупрозрачность */
+    z-index: -1; /* Чтобы картинка была на фоне */
+}
+
+/* Центрирование содержимого */
+.content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Заголовок */
+.content h1 {
+    font-size: 3em;
+    color: #fffefc;
+    margin: 0.5em 0;
+}
+
+/* Текст */
+.content p {
+    font-size: 1.5em;
+    color: #fffefc;
+    margin: 0.5em 0;
+}
+
+.birthday-button {
+    background-color: #D94496;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.6s cubic-bezier(0.25, 1.25, 0.5, 1), background-color 0.3s;
+}
+
+.birthday-button:hover {
+    background-color: #e0218a;
+    transform: scale(1.1) rotate(2deg); /* Легкое увеличение с наклоном */
+}
+
+body {
+    overflow-y: scroll;
+}
+
+body {
+  height: 200vh; /* Увеличивает высоту страницы до 200% высоты окна */
+}
+
+h1 {
+  position: absolute; /* Позволяет задавать точное расположение */
+  top: 200px; /* Отступ от верхнего края */
+  left: 650px; /* Отступ от левого края */
+}
+
+p {
+  position: absolute;
+  top: 275px;
+  left: 750px;
+}
+
+button {
+  position: absolute;
+  top: 360px;
+  left: 750px;
+}
+
+.marked-area {
+  background-image: url('bgi.jpg'); /* Укажите путь к изображению */
+  background-size: cover; /* Растягивает картинку по размеру контейнера */
+  background-repeat: no-repeat; /* Запрещает повторение картинки */
+  background-position: center; /* Центрирует изображение */
+  height: 40%; /* Высота области */
+  width: 100%; /* Ширина области */
+}
+
+body {
+  background-color: #F2CFDB; /* Нежно-розовый цвет */
+
+.photo-fan {
+  position: absolute; /* Позволяет установить конкретное место */
+  top: 700px; /* Отступ сверху */
+  left: 50px; /* Отступ слева */
+  display: flex;
+  gap: 0px; /* Расстояние между фото */
+}
+
+.photo {
+  position: relative;
+  margin: 0 5px
+  transform-origin: center bottom;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo img {
+  width: 200px; /* Размер фото */
+  border-radius: 10px; /* Скруглённые углы */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+  transition: transform 0.3s ease;
+  cursor: pointer; /* Указатель при наведении */
+  z-index: 10;
+}
+
+.photo:hover img {
+  transform: scale(1.2); /* Увеличение при наведении */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Усиление тени */
+}
+
+.photo:nth-child(1) {
+  transform:  translateY(25px) rotate(-15deg); /* Наклон левой фотографии */
+ }
+
+.photo:nth-child(3) {
+  transform: translateY(25px) rotate(15deg); /* Наклон правой фотографии */
+ }
+
+.photo:hover {
+  transform: rotate(0deg); /* Выравнивание при наведении */
+}
+
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Затемнение фона */
+    z-index: 10; /* Слой для затемнения */
+}
+
+.modal.active {
+    display: block; /* Показываем модальное окно */
+}
+
+.modal-content {
+    position: absolute;
+    top: 100px; /* Отступ сверху */
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование по горизонтали */
+    z-index: 20;
+    width: 30%; /* Уменьшаем ширину контейнера */
+    height: 60%; /* Высота будет пропорциональна */
+    border-radius: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lerunya-title {
+    font-family: 'Cherry Bomb One', cursive; /* Шрифт */
+    font-size: 40px; /* Увеличенный размер текста */
+    font-weight: normal; /* Нормальный вес шрифта */
+    color: #FCEEF8; /* Основной цвет текста */
+    -webkit-text-stroke: 10px #CDADC4; /* Чёрная обводка */
+    position: absolute; /* Позволяет свободно перемещать текст */
+    top: 890px; /* Настройка отступа сверху */
+    left: 130px; /* Настройка отступа слева */
+}
+
+
+.lerunya-title1 {
+    font-family: 'Cherry Bomb One', cursive; /* Шрифт */
+    font-size: 40px; /* Увеличенный размер текста */
+    font-weight: normal; /* Нормальный вес шрифта */
+    color: #FCEEF8; /* Основной цвет текста */
+    -webkit-text-stroke: 6px #FCEEF8; /* Чёрная обводка */
+    position: absolute; /* Позволяет свободно перемещать текст */
+    top: 883px; /* Настройка отступа сверху */
+    left: 130px; /* Настройка отступа слева */
+}
+
+
+#age-timer {
+  position: absolute;
+  top: 1240px;
+  left: 970px;
+  font-size: 2em;
+  color: #FEF7FC;
+  }
+
+.lerunya-title2 {
+    font-family: 'Cherry Bomb One', cursive; /* Шрифт */
+    font-size: 40px; /* Увеличенный размер текста */
+    font-weight: normal; /* Нормальный вес шрифта */
+    color: #FCEEF8; /* Основной цвет текста */
+    -webkit-text-stroke: 10px #CDADC4; /* Чёрная обводка */
+    position: absolute; /* Позволяет свободно перемещать текст */
+    top: 1100px; /* Настройка отступа сверху */
+    left: 1100px; /* Настройка отступа слева */
+}
+
+
+.lerunya-title3 {
+    font-family: 'Cherry Bomb One', cursive; /* Шрифт */
+    font-size: 40px; /* Увеличенный размер текста */
+    font-weight: normal; /* Нормальный вес шрифта */
+    -webkit-text-stroke: 6px #FCEEF8; /* Чёрная обводка */
+    position: absolute; /* Позволяет свободно перемещать текст */
+    top: 1086px; /* Настройка отступа сверху */
+    left: 1100px; /* Настройка отступа слева */
+}
+
+.book {
+  position: absolute;
+  top: 1400px;
+  left: 120px;
+  width: 340px;
+  height: 450px;
+  perspective: 1500px; /* Для 3D-эффекта */
+  overflow: hidden;
+}
+
+.page {
+  position: absolute;
+  background-image: url('pattern.png');
+  background-repeat: repeat;
+  background-size: 400px 400px;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #E673C6;
+  transform-origin: left center;
+  transform: rotateY(0deg);
+  transition: transform 0.8s ease-in-out;
+  backface-visibility: hidden; /* Прячем обратную сторону */
+}
+
+#prevPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #D94496;
+  color: #FCEEF8;
+  transition: transform 0.6s cubic-bezier(0.25, 1.25, 0.5, 1), background-color 0.3s;
+  left: 155px; /* Слева от книги */
+  top: 1900px;
+  width: 120px;
+  height: 30px;
+}
+
+#prevPage:hover {
+  transform: translateY(-50%) scale(1.1);
+  background-color: #e0218a;
+}
+
+
+
+#nextPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #D94496;
+  color: #FCEEF8;
+  transition: transform 0.6s cubic-bezier(0.25, 1.25, 0.5, 1), background-color 0.3s;
+  left: 295px; /* Справа от книги */
+  top: 1900px;
+  width: 120px;
+  height: 30px;
+}
+
+#nextPage:hover {
+  transform: translateY(-50%) scale(1.1);
+  background-color: #e0218a;
+}
+
+
+.photo-album {
+  position: absolute; /* Позволяет задавать координаты для фотографий */
+  width: auto; /* Пропорциональная ширина */
+  height: auto; /* Пропорциональная высота */
+  z-index: 5; /* Фотографии должны быть ниже кнопок, но выше фона */
+}
+
+
+.album-button1 {
+  position: absolute; /* Чтобы кнопки можно было размещать на странице */
+  top: 50px;
+  left: 105px;
+  width: 100px; /* Ширина кнопки */
+  height: 100px; /* Высота кнопки */
+  background-image: url("button-image1.png"); /* Путь к вашей кнопке */
+  background-size: cover; /* Подгоняет изображение под размеры кнопки */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  border: none; /* Убирает рамки */
+  cursor: pointer; /* Изменяет курсор на указатель при наведении */
+  z-index: 10; /* Кнопка должна быть выше остальных элементов */
+}
+
+.album-button1:hover {
+  transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+  transition: transform 0.2s ease-in-out; /* Анимация увеличения */
+}
+
+.album-button2 {
+  position: absolute; /* Чтобы кнопки можно было размещать на странице */
+  top: 100px;
+  left: 190px;
+  width: 50px; /* Ширина кнопки */
+  height: 50px; /* Высота кнопки */
+  background-image: url("button-image1.png"); /* Путь к вашей кнопке */
+  background-size: cover; /* Подгоняет изображение под размеры кнопки */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  border: none; /* Убирает рамки */
+  cursor: pointer; /* Изменяет курсор на указатель при наведении */
+  z-index: 10; /* Кнопка должна быть выше остальных элементов */
+}
+
+.album-button2:hover {
+  transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+  transition: transform 0.2s ease-in-out; /* Анимация увеличения */
+}
+
+.album-button3 {
+  position: absolute; /* Чтобы кнопки можно было размещать на странице */
+  top: 50px;
+  left: 25px;
+  width: 80px; /* Ширина кнопки */
+  height: 80px; /* Высота кнопки */
+  background-image: url("button-image1.png"); /* Путь к вашей кнопке */
+  background-size: cover; /* Подгоняет изображение под размеры кнопки */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  border: none; /* Убирает рамки */
+  cursor: pointer; /* Изменяет курсор на указатель при наведении */
+  z-index: 10; /* Кнопка должна быть выше остальных элементов */
+}
+
+.album-button3:hover {
+  transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+  transition: transform 0.2s ease-in-out; /* Анимация увеличения */
+}
+
+.album-button4 {
+  position: absolute; /* Чтобы кнопки можно было размещать на странице */
+  top: 50px;
+  left: 25px;
+  width: 110px; /* Ширина кнопки */
+  height: 110px; /* Высота кнопки */
+  background-image: url("button-image1.png"); /* Путь к вашей кнопке */
+  background-size: cover; /* Подгоняет изображение под размеры кнопки */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  border: none; /* Убирает рамки */
+  cursor: pointer; /* Изменяет курсор на указатель при наведении */
+  z-index: 10; /* Кнопка должна быть выше остальных элементов */
+}
+
+.album-button4:hover {
+  transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+  transition: transform 0.2s ease-in-out; /* Анимация увеличения */
+}
+
+.album-button5 {
+  position: absolute; /* Чтобы кнопки можно было размещать на странице */
+  top: 50px;
+  left: 75px;
+  width: 80px; /* Ширина кнопки */
+  height: 80px; /* Высота кнопки */
+  background-image: url("button-image1.png"); /* Путь к вашей кнопке */
+  background-size: cover; /* Подгоняет изображение под размеры кнопки */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  border: none; /* Убирает рамки */
+  cursor: pointer; /* Изменяет курсор на указатель при наведении */
+  z-index: 10; /* Кнопка должна быть выше остальных элементов */
+}
+
+.album-button5:hover {
+  transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+  transition: transform 0.2s ease-in-out; /* Анимация увеличения */
+}
+
+.album-button6 {
+  position: absolute; /* Чтобы кнопки можно было размещать на странице */
+  top: 55px;
+  left: 100px;
+  width: 90px; /* Ширина кнопки */
+  height: 90px; /* Высота кнопки */
+  background-image: url("button-image1.png"); /* Путь к вашей кнопке */
+  background-size: cover; /* Подгоняет изображение под размеры кнопки */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  border: none; /* Убирает рамки */
+  cursor: pointer; /* Изменяет курсор на указатель при наведении */
+  z-index: 10; /* Кнопка должна быть выше остальных элементов */
+}
+
+.album-button6:hover {
+  transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+  transition: transform 0.2s ease-in-out; /* Анимация увеличения */
+}
+
+.album-button7 {
+  position: absolute; /* Чтобы кнопки можно было размещать на странице */
+  top: 100px;
+  left: 150px;
+  width: 50px; /* Ширина кнопки */
+  height: 50px; /* Высота кнопки */
+  background-image: url("button-image1.png"); /* Путь к вашей кнопке */
+  background-size: cover; /* Подгоняет изображение под размеры кнопки */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  border: none; /* Убирает рамки */
+  cursor: pointer; /* Изменяет курсор на указатель при наведении */
+  z-index: 10; /* Кнопка должна быть выше остальных элементов */
+}
+
+.album-button7:hover {
+  transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+  transition: transform 0.2s ease-in-out; /* Анимация увеличения */
+}
+
+
+
+.page:nth-child(1) {
+    background-image: url('pattern.png'); /* Паттерн для первой страницы */
+    background-repeat: repeat;
+    background-size: 100px 100px;
+}
+
+.page:nth-child(2) {
+    background-image: url('pattern.png'); /* Паттерн для первой страницы */
+    background-repeat: repeat;
+    background-size: 100px 100px;}
+
+.page:nth-child(3) {
+    background-image: url('pattern.png'); /* Паттерн для первой страницы */
+    background-repeat: repeat;
+    background-size: 100px 100px;}
+
+.page:nth-child(4) {
+    background-image: url('pattern.png'); /* Паттерн для первой страницы */
+    background-repeat: repeat;
+    background-size: 100px 100px;}
+
+.page:nth-child(5) {
+    background-image: url('pattern.png'); /* Паттерн для первой страницы */
+    background-repeat: repeat;
+    background-size: 100px 100px;}
+
+.page:nth-child(6) {
+    background-image: url('pattern.png'); /* Паттерн для первой страницы */
+    background-repeat: repeat;
+    background-size: 100px 100px;}
+
+.page:nth-child(7) {
+    background-image: url('pattern.png'); /* Паттерн для первой страницы */
+    background-repeat: repeat;
+    background-size: 100px 100px;}
+
+
+.page:nth-child(8) {
+    background-image: url('pattern.png'); /* Паттерн для первой страницы */
+    background-repeat: repeat;
+    background-size: 100px 100px;}
+
+.page:nth-child(9) {
+    background-image: url('pattern.png'); /* Паттерн для первой страницы */
+    background-repeat: repeat;
+    background-size: 100px 100px;}
+
+.nadpis-title {
+    position: absolute;
+    top: 17px; /* Отступ сверху */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Центрирование текста */
+    font-family: 'Cherry Bomb One', cursive; /* Шрифт */
+    font-size: 40px; /* Увеличенный размер текста */
+    font-weight: normal; /* Нормальный вес шрифта */    color: #ffffff; /* Цвет текста */
+    -webkit-text-stroke: 11px #EDB5D2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тень текста */
+    z-index: 100; /* Текст выше фона */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.nadpis-title2 {
+    position: absolute;
+    top: 110px; /* Отступ сверху */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Центрирование текста */
+    font-family: 'Cherry Bomb One', cursive; /* Шрифт */
+    font-size: 40px; /* Увеличенный размер текста */
+    font-weight: normal; /* Нормальный вес шрифта */    color: #ffffff; /* Цвет текста */
+    -webkit-text-stroke: 6px #FFDCEE;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тень текста */
+    z-index: 100; /* Текст выше фона */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 15px;
+  font-weight: bold;
+  color: #E3C8D7;
+  text-align: center;
+  opacity: 0; /* Сначала скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление */
+  z-index: 100;
+}
+.text-container.active {
+  opacity: 1; /* Появляется, когда добавляем класс active */
+}
+
+.text-container2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: pink;
+  text-align: center;
+  opacity: 0; /* Сначала скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление */
+  z-index: 100;
+}
+.text-container.active {
+  opacity: 1; /* Появляется, когда добавляем класс active */
+}
+
+.text-container3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: pink;
+  text-align: center;
+  opacity: 0; /* Сначала скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление */
+  z-index: 100;
+}
+.text-container.active {
+  opacity: 1; /* Появляется, когда добавляем класс active */
+}
+
+.text-container4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: pink;
+  text-align: center;
+  opacity: 0; /* Сначала скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление */
+  z-index: 100;
+}
+.text-container.active {
+  opacity: 1; /* Появляется, когда добавляем класс active */
+}
+
+.text-container5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: pink;
+  text-align: center;
+  opacity: 0; /* Сначала скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление */
+  z-index: 100;
+}
+.text-container.active {
+  opacity: 1; /* Появляется, когда добавляем класс active */
+}
+
+.text-container6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: pink;
+  text-align: center;
+  opacity: 0; /* Сначала скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление */
+  z-index: 100;
+}
+.text-container.active {
+  opacity: 1; /* Появляется, когда добавляем класс active */
+}
+
+.text-container7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: pink;
+  text-align: center;
+  opacity: 0; /* Сначала скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление */
+  z-index: 100;
+}
+.text-container.active {
+  opacity: 1; /* Появляется, когда добавляем класс active */
+}
+
+
+
+/* CSS */
+.tree6 {
+  position: absolute;
+  top: 2000px;
+  left: 860px;
+  width: 800px;
+  height: auto;
+  z-index: 10;
+}
+
+.memory-container {
+  position: relative; /* Позволяет задавать положение для вложенных элементов */
+}
+
+.memory-image {
+  position: absolute; /* Позволяет размещать изображения отдельно */
+  width: 100px; /* Стандартный размер, можно менять */
+  height: auto; /* Автоматическая высота */
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.memory-image:hover {
+  transform: scale(1.2);
+}
+
+
+/* Настройка для каждой картинки */
+#memory1 {
+  top: 1600px; /* Положение сверху */
+  left: 1140px; /* Положение слева */
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+#memory1:hover {
+  transform: scale(1.2);
+}
+
+
+#memory2 {
+  top: 1790px;
+  left:1120px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+#memory2:hover {
+  transform: scale(1.2);
+}
+
+
+#memory3 {
+  top: 1450px;
+  left: 1190px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+
+#memory3:hover {
+  transform: scale(1.2);
+}
+
+#memory4 {
+  top: 1700px;
+  left: 950px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+#memory4:hover {
+  transform: scale(1.2);
+}
+
+#memory5 {
+  top: 1700px;
+  left: 1450px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+
+#memory5:hover {
+  transform: scale(1.2);
+}
+
+#memory6 {
+  top: 1550px;
+  left: 1400px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+
+#memory6:hover {
+  transform: scale(1.2);
+}
+
+#memory7 {
+  top: 1550px;
+  left: 1000px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+#memory7:hover {
+  transform: scale(1.2);
+}
+
+
+#memory8 {
+  top: 1700px;
+  left: 1300px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+#memory8:hover {
+  transform: scale(1.2);
+}
+
+.redirect-button {
+  position: absolute;
+  top: 1320px;
+  left: 30px;
+  width: 100px; /* Ширина изображения */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  cursor: pointer; /* Указатель при наведении */
+  transition: transform 0.3s ease; /* Плавный переход */
+}
+
+.redirect-button:hover {
+  transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.photo-button {
+  position: absolute;
+  top: 1500px;
+  left: 1000px;
+  width: 400px; /* Ширина кнопки */
+  height: auto; /* Высота будет пропорциональной */
+  cursor: pointer; /* Указатель при наведении */
+  transition: transform 0.3s ease; /* Плавный эффект */
+}
+
+.photo-button:hover {
+  transform: scale(1.1); /* Увеличение при наведении */
+}
+
